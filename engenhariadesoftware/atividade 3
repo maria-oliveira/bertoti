@@ -1,0 +1,12 @@
+🔹 Exemplos de Trade-offs
+
+1. **🚀 Velocidade vs. Qualidade**  
+Às vezes a equipe precisa decidir: entregamos logo ou fazemos com mais cuidado? Entregar rápido ajuda a mostrar resultados imediatos, mas pode deixar o código cheio de “remendos” que dão trabalho depois.
+Já caprichar na qualidade leva mais tempo, mas evita dores de cabeça no futuro.
+
+2. **⚡ Performance vs. Facilidade de manutenção**
+Um código super rápido costuma ser mais complicado e difícil de entender. Já um código simples é fácil de mexer, mas pode gastar mais recursos da máquina. 
+A escolha depende da situação: em alguns casos, velocidade é essencial; em outros, clareza é o que mais importa.
+
+3. **🔗 Centralização vs. Flexibilidade**  
+Concentrar tudo em um único serviço deixa o sistema mais fácil de controlar, mas cria um ponto de falha. Dividir em vários serviços independentes dá mais flexibilidade e resistência, só que também traz mais complexidade para coordenar.
