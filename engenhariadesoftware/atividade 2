@@ -1,0 +1,11 @@
+🔹 Segundo Trecho
+O valor do software não e dado para o funcionamento atual e sim em se manter útil e sustentável ao longo do tempo. Para que isso aconteça práticas que considerem processos, ferramentas e cultura organizacional são exigidas, não somente algoritmos e sintaxes.
+Programação é o ato imediato, mas engenharia de software é o resultado de programação mais tempo, isso significa refletir sobre como o código lida com mudanças inevitáveis,como permanece compreensível para novos desenvolvedores e como evolui sem acumular
+dívidas técnicas que comprometam sua qualidade. Nessa perspectiva, a manutenção deixa de ser uma atividade secundária e passa a ocupar um papel essencial no ciclo de vida do software.
+Os três princípios fundamentais destacados pelo autor são Tempo e Mudança, Escala e Crescimento e Compensações e Custos. O primeiro ressalta que um código que não muda está morto, 
+pois todo software relevante precisa evoluir para atender novas necessidades ou corrigir falhas, e o grande desafio é projetar sistemas capazes de mudar sem se quebrar.
+O segundo princípio mostra que o software não cresce sozinho, mas junto com a organização, já que times aumentam, produtos se expandem e a complexidade se multiplica, por isso, 
+são necessárias práticas de coordenação, padrões de qualidade e ferramentas de colaboração que sustentem esse crescimento. O terceiro princípio lembra que toda decisão 
+em engenharia envolve custos, seja de tempo, desempenho, complexidade ou dinheiro. Nem sempre a solução mais elegante é a melhor, e por isso é fundamental que as escolhas sejam feitas de forma consciente, 
+considerando o contexto, as prioridades e os efeitos de longo prazo.
+
