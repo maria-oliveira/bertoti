@@ -12,7 +12,7 @@ class Teste {
         Mercado mercadinho = new Mercado();
         mercadinho.addClientes(new Cliente("Maria", "12345678910",true));
         assertEquals(1, mercadinho.getClientes().size());
-        List<Cliente> clientesComCartao = mercadinho.buscarClientesComCartao(true);
+        List<Cliente> clientesComCartao = mercadinho.verificarCartao(true);
         System.out.println("Clientes com cartão: " + clientesComCartao.size());
 
         List<Cliente> busca = mercadinho.buscarClienteNome("Maria");
