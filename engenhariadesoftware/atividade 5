@@ -28,7 +28,7 @@ public class Mercado {
     }
 
 
-    public List<Cliente> buscarClientesComCartao(boolean possuiCartao) {
+    public List<Cliente> verificarCartao(boolean possuiCartao) {
         List<Cliente> encontrados = new LinkedList<Cliente>();
         for (Cliente cliente : clientes) {
             if (cliente.isCartao() == possuiCartao) {
