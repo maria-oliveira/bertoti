@@ -83,5 +83,10 @@ Na prática: Não faz sentido construir seu próprio sistema de pagamentos quand
 ## ATIVIDADE 6
 <img width="805" height="883" alt="image" src="https://github.com/user-attachments/assets/f90a38ab-1b3a-4006-9e1d-3a6ada07b2f8" />
 
-# ATIVIDADE 7
- Integração com SQLite [Integração com SQLite](./engenhariadesoftware/Atividade7)
+## ATIVIDADE 7
+  [Integração com SQLite](./engenhariadesoftware/Atividade7)
+
+ ---
+
+ ## ATIVIDADE 8
+ [ollama](./engenhariadesoftware/Atividade08)
