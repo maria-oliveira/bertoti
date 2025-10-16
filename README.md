@@ -34,10 +34,10 @@ Pra organizar esse pensamento, o livro se estrutura em torno de três princípio
 2. **Escala e Crescimento** - Como a organização vai precisar evoluir conforme cresce
 3. **Trade-offs e Custos** - Como tomar decisões levando em conta os dois primeiros pontos
 
-===
+---
 
 ## ATIVIDADE 3
-1. Monolito vs Microsserviços
+**1. Monolito vs Microsserviços**
 O dilema: Manter tudo em uma aplicação única ou dividir em serviços independentes?
 Trade-offs envolvidos:
 
@@ -48,7 +48,7 @@ Na prática: Netflix usa microsserviços porque precisa escalar streaming indepe
 
 ---
 
-2. Segurança vs Usabilidade
+**2. Segurança vs Usabilidade**
 O dilema: Tornar o sistema super seguro ou super fácil de usar?
 Trade-offs envolvidos:
 
@@ -59,7 +59,7 @@ Na prática: Um app bancário vai pesar mais pra segurança - melhor ter usuári
 
 ---
 
-3. Build vs Buy (Construir vs Comprar)
+**3. Build vs Buy**
 O dilema: Desenvolver uma solução própria ou usar algo pronto do mercado?
 Trade-offs envolvidos:
 
@@ -68,3 +68,19 @@ Buy (comprar) significa solução rápida, suporte profissional, atualizações 
 
 Na prática: Não faz sentido construir seu próprio sistema de pagamentos quando Stripe existe. Mas o algoritmo de recomendação que é o diferencial competitivo da sua empresa? Aí talvez valha construir. Amazon construiu AWS porque precisava, mas usa serviços terceiros pra coisas como email marketing. A pergunta é sempre: "isso é core pro nosso negócio ou é commodity?" ARRUME O READEME
 - Algoritmo de recomendação → construir internamente se for diferencial competitivo.
+
+---
+
+## ATIVIDADE 4
+<img width="803" height="445" alt="image" src="https://github.com/user-attachments/assets/dabb0075-7d04-48f1-b6af-a601e6fbb150" />
+
+---
+
+## ATIVIDADE 5
+<img width="625" height="834" alt="image" src="https://github.com/user-attachments/assets/9b4e9be3-2de4-4a2c-b2a8-85f78211e4f9" />
+<img width="493" height="968" alt="image" src="https://github.com/user-attachments/assets/4e90a364-a034-4d3b-9bec-8a62001575ab" />
+
+---
+
+## ATIVIDADE 6
+<img width="805" height="883" alt="image" src="https://github.com/user-attachments/assets/f90a38ab-1b3a-4006-9e1d-3a6ada07b2f8" />
