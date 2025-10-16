@@ -46,7 +46,6 @@ Microsserviços permitem que times trabalhem independentemente, você escala só
 
 Na prática: Netflix usa microsserviços porque precisa escalar streaming independentemente de recomendações. Mas uma startup com 3 desenvolvedores provavelmente vai sofrer tentando gerenciar 20 microsserviços quando um monolito bem feito resolveria.
 
----
 
 **2. Segurança vs Usabilidade**
 O dilema: Tornar o sistema super seguro ou super fácil de usar?
@@ -57,7 +56,6 @@ Usabilidade máxima é login social com um clique, sessões que nunca expiram, l
 
 Na prática: Um app bancário vai pesar mais pra segurança - melhor ter usuários incomodados que contas invadidas. Já um jogo casual mobile pode priorizar usabilidade - ninguém quer ficar colocando senha toda vez que abre o jogo. O truque é encontrar o equilíbrio: segurança onde importa, sem adicionar fricção desnecessária.
 
----
 
 **3. Build vs Buy**
 O dilema: Desenvolver uma solução própria ou usar algo pronto do mercado?
@@ -84,3 +82,6 @@ Na prática: Não faz sentido construir seu próprio sistema de pagamentos quand
 
 ## ATIVIDADE 6
 <img width="805" height="883" alt="image" src="https://github.com/user-attachments/assets/f90a38ab-1b3a-4006-9e1d-3a6ada07b2f8" />
+
+# ATIVIDADE 7
+ Integração com SQLite [Integração com SQLite](./engenhariadesoftware/Atividade7)
