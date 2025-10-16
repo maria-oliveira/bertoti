@@ -1,9 +1,78 @@
 # ENGENHARIA DE SOFTWARE
 
-## ATIVIDADE 1
-Comentar com suas palavras o primeiro trecho do livro Software Engineering at Google, Oreilly.
-"What precisely do we mean by software engineering? What distinguishes “software engineering” from “programming” or “computer science”? And why would Google have a unique perspective to add to the corpus of previous software engineering literature written over the past 50 years? The terms “programming” and “software engineering” have been used interchangeably for quite some time in our industry, although each term has a different emphasis and different implications. University students tend to study computer science and get jobs writing code as “programmers.” “Software engineering,” however, sounds more serious, as if it implies the application of some theoretical knowledge to build something real and precise. Mechanical engineers, civil engineers, aeronautical engineers, and those in other engineering disciplines all practice engineering. They all work in the real world and use the application of their theoretical knowledge to create something real. Software engineers also create “something real,” though it is less tangible than the things other engineers create. Unlike those more established engineering professions, current software engineering theory or practice is not nearly as rigorous. Aeronautical engineers must follow rigid guidelines and practices, because errors in their calculations can cause real damage; programming, on the whole, has traditionally not followed such rigorous practices. But, as software becomes more integrated into our lives, we must adopt and rely on more rigorous engineering methods. We hope this book helps others see a path toward more reliable software practices."
+## ATIVIDADE 1 – Comentário sobre o primeiro trecho do livro *Software Engineering at Google*
 
-O trecho estabelece uma distinção entre três conceitos que frequentemente se confundem: programação, ciência da computação e engenharia de software.
-O texto questiona o que realmente significa "engenharia de software" e por que o Google teria uma perspectiva única sobre o tema. Os autores observam que, embora os termos "programação" e "engenharia de software" sejam usados como sinônimos na indústria, eles carregam pesos diferentes. Enquanto estudantes universitários aprendem ciência da computação e trabalham como "programadores", o termo "engenharia de software" sugere algo mais sério, a aplicação de conhecimento teórico para construir algo concreto e preciso.
-O ponto crucial é que, ao contrário dessas engenharias tradicionais que seguem diretrizes rígidas, a prática de programação historicamente não seguiu padrões tão rigorosos. Os autores argumentam que, à medida que o software se torna cada vez mais integrado às nossas vidas, precisamos adotar métodos de engenharia mais rigorosos e confiáveis. É uma chamada para profissionalizar e amadurecer a área, tratando o desenvolvimento de software com o mesmo nível de seriedade e metodologia das engenharias estabelecidas.
+O trecho estabelece uma distinção entre três conceitos frequentemente confundidos: **programação, ciência da computação e engenharia de software**.  
+O texto questiona o que realmente significa *engenharia de software* e por que o Google teria uma perspectiva única sobre o tema. Os autores observam que, embora os termos "programação" e "engenharia de software" sejam usados como sinônimos na indústria, eles carregam significados diferentes:  
+
+- **Programação**: estudantes de ciência da computação aprendem a escrever código e atuam como programadores.  
+- **Engenharia de software**: sugere algo mais sério, a aplicação de conhecimento teórico para construir algo concreto e preciso.  
+
+O ponto crucial é que, ao contrário de engenharias tradicionais, que seguem diretrizes rígidas, a prática de programação historicamente não seguiu padrões tão rigorosos. Os autores argumentam que, à medida que o software se torna mais integrado às nossas vidas, precisamos adotar métodos de engenharia mais **rígidos e confiáveis**, tratando o desenvolvimento de software com a mesma seriedade das engenharias tradicionais.
+
+---
+
+## ATIVIDADE 2 – Comentário sobre o segundo trecho do livro *Software Engineering at Google*
+
+Os autores aprofundam o conceito anterior e definem engenharia de software como **não apenas escrever código**, mas todo o ecossistema de **ferramentas, processos e práticas** que uma organização utiliza para construir e **manter** o código ao longo do tempo.  
+
+A frase-chave do trecho é: **“software engineering is programming integrated over time”**. Ou seja, é pensar no código como algo que deve ser sustentável e adaptável durante todo seu ciclo de vida: da concepção à manutenção e eventual descontinuação.  
+
+O livro organiza esse conceito em três princípios fundamentais:  
+
+1. **Tempo e Mudança** – Como o código precisa se adaptar durante sua vida útil.  
+2. **Escala e Crescimento** – Como a organização evolui à medida que cresce.  
+3. **Trade-offs e Custos** – Como tomar decisões equilibrando os dois pontos anteriores.  
+
+O foco central é a **sustentabilidade do software**, garantindo que ele continue útil e adaptável frente às mudanças e crescimento da organização.
+
+---
+
+## ATIVIDADE 3 – Análise de dilemas de engenharia de software
+
+### 1. Monólito vs Microsserviços
+**Dilema:** manter tudo em uma aplicação única ou dividir em serviços independentes?  
+
+**Monólito:**  
+- Vantagens: simples de desenvolver, depurar e deployar; fluxo fácil de rastrear; transações diretas.  
+- Desvantagens: difícil manutenção em sistemas grandes; mudanças podem impactar tudo; escalabilidade limitada.  
+
+**Microsserviços:**  
+- Vantagens: times independentes; escalabilidade seletiva; falhas isoladas; tecnologias variadas por serviço.  
+- Desvantagens: complexidade operacional; comunicação entre serviços; latência; monitoramento e deployments complexos.  
+
+**Exemplo:** Netflix usa microsserviços para escalar streaming e recomendações independentemente. Startups pequenas podem se beneficiar mais de um monólito bem estruturado.
+
+---
+
+### 2. Segurança vs Usabilidade
+**Dilema:** priorizar segurança máxima ou experiência do usuário fluida?  
+
+**Segurança máxima:**  
+- Vantagens: proteção de dados; autenticação forte; criptografia completa.  
+- Desvantagens: fricção para o usuário; experiência pode ficar frustrante.  
+
+**Usabilidade máxima:**  
+- Vantagens: login rápido; zero barreiras; experiência agradável.  
+- Desvantagens: maior risco de ataques; menor proteção de dados.  
+
+**Exemplo:**  
+- App bancário → prioriza segurança.  
+- Jogo mobile casual → prioriza usabilidade.
+
+---
+
+### 3. Build vs Buy (Construir vs Comprar)
+**Dilema:** desenvolver internamente ou usar soluções prontas?  
+
+**Build (construir):**  
+- Vantagens: total controle; customização; sem dependência de terceiros.  
+- Desvantagens: alto custo de tempo e manutenção; reinvenção de soluções existentes.  
+
+**Buy (comprar):**  
+- Vantagens: solução rápida; suporte; atualizações automáticas; foca no core business.  
+- Desvantagens: custo contínuo; dependência do fornecedor; menor flexibilidade.  
+
+**Exemplo:**  
+- Sistema de pagamentos → comprar (Stripe).  
+- Algoritmo de recomendação → construir internamente se for diferencial competitivo.
