@@ -1,17 +1,18 @@
 package com.mariaeduarda;
 
-import io.github.ollama4j.OllamaAPI;
-import io.github.ollama4j.utils.OptionsBuilder;
-
+import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
 import java.util.Scanner;
+import org.json.JSONObject;
 
 public class Main {
     public static void main(String[] args) {
-        // Conectar ao Ollama
-        OllamaAPI ollama = new OllamaAPI("http://localhost:11434");
-        ollama.setRequestTimeoutSeconds(120);
-
         Scanner scanner = new Scanner(System.in);
+        HttpClient client = HttpClient.newBuilder()
+                .connectTimeout(java.time.Duration.ofSeconds(120))
+                .build();
 
         System.out.println("=================================");
         System.out.println("   CHAT COM OLLAMA");
@@ -22,39 +23,55 @@ public class Main {
             System.out.print("Você: ");
             String pergunta = scanner.nextLine();
 
-            // Verificar se quer sair
             if (pergunta.equalsIgnoreCase("sair") ||
                     pergunta.equalsIgnoreCase("exit")) {
                 System.out.println("\nAté logo! 👋");
                 break;
             }
 
-            // Verificar se digitou algo
             if (pergunta.trim().isEmpty()) {
                 continue;
             }
 
             try {
+                System.out.println("\n[DEBUG] Enviando pergunta para o Ollama...");
+
+                // Criar o JSON da requisição
+                JSONObject json = new JSONObject();
+                json.put("model", "llama3.2:latest");
+                json.put("prompt", pergunta);
+                json.put("stream", false);
+
+                System.out.println("[DEBUG] JSON enviado: " + json.toString());
+
+                // Criar a requisição HTTP
+                HttpRequest request = HttpRequest.newBuilder()
+                        .uri(URI.create("http://localhost:11434/api/generate"))
+                        .header("Content-Type", "application/json")
+                        .POST(HttpRequest.BodyPublishers.ofString(json.toString()))
+                        .build();
+
+                // Enviar e receber resposta
+                System.out.println("[DEBUG] Aguardando resposta...");
+                HttpResponse<String> response = client.send(request,
+                        HttpResponse.BodyHandlers.ofString());
+
+                System.out.println("[DEBUG] Status code: " + response.statusCode());
+                System.out.println("[DEBUG] Resposta completa: " + response.body());
+
+                // Processar resposta
+                JSONObject resposta = new JSONObject(response.body());
+                String textoResposta = resposta.getString("response");
+
                 System.out.print("\nIA: ");
-
-                // Fazer a pergunta ao modelo (com streaming via callback)
-                ollama.generate(
-                        "llama3.2",           // modelo
-                        pergunta,              // prompt
-                        false,                 // raw (não usar modo raw)
-                        new OptionsBuilder()   // opções
-                                .setTemperature(0.7f)
-                                .build(),
-                        (chunk) -> {           // callback para streaming
-                            System.out.print(chunk);
-                        }
-                );
-
-                System.out.println("\n");
+                System.out.println(textoResposta);
+                System.out.println();
 
             } catch (Exception e) {
                 System.err.println("\nErro: " + e.getMessage());
-                e.printStackTrace();
+                System.err.println("Certifique-se de que o Ollama está rodando!");
+                System.err.println("Execute: ollama serve");
+                System.err.println();
             }
         }
 
