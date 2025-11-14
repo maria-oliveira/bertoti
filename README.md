@@ -63,8 +63,8 @@ Trade-offs envolvidos:
 Build (construir) te dá controle total, customização perfeita pro seu caso, sem dependência de terceiros, e você não paga licenças. Mas consome muito tempo e recursos, você precisa manter e evoluir a solução, tem que lidar com todos os bugs, e provavelmente vai reinventar a roda em muitos aspectos.
 Buy (comprar) significa solução rápida, suporte profissional, atualizações automáticas e best practices embutidas. Você foca no seu core business em vez de problemas já resolvidos. Porém, você paga continuamente (custos de licença), fica preso ao vendor, tem menos flexibilidade pra customizar, e depende da roadmap de outra empresa.
 
-Na prática: Não faz sentido construir seu próprio sistema de pagamentos quando Stripe existe. Mas o algoritmo de recomendação que é o diferencial competitivo da sua empresa? Aí talvez valha construir. Amazon construiu AWS porque precisava, mas usa serviços terceiros pra coisas como email marketing. A pergunta é sempre: "isso é core pro nosso negócio ou é commodity?" ARRUME O READEME
-- Algoritmo de recomendação → construir internamente se for diferencial competitivo.
+Na prática: Não faz sentido construir seu próprio sistema de pagamentos quando Stripe existe. Mas o algoritmo de recomendação que é o diferencial competitivo da sua empresa? Aí talvez valha construir. Amazon construiu AWS porque precisava, mas usa serviços terceiros pra coisas como email marketing. A pergunta é sempre: "isso é core pro nosso negócio ou é commodity?" 
+
 
 ---
 
