@@ -68,7 +68,8 @@ Na prática: Não faz sentido construir seu próprio sistema de pagamentos quand
 ---
 
 ## ATIVIDADE 4
-<img width="803" height="445" alt="image" src="https://github.com/user-attachments/assets/dabb0075-7d04-48f1-b6af-a601e6fbb150" />
+<img width="1035" height="549" alt="image" src="https://github.com/user-attachments/assets/d758dfbf-216b-416f-af94-a61f4b4a94f5" />
+
 
 ---
 
