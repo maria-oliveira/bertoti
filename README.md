@@ -74,7 +74,51 @@ Na prática: Não faz sentido construir seu próprio sistema de pagamentos quand
 ---
 
 ## ATIVIDADE 5
-<img width="625" height="834" alt="image" src="https://github.com/user-attachments/assets/9b4e9be3-2de4-4a2c-b2a8-85f78211e4f9" />
+```java
+import java.util.LinkedList;
+import java.util.List;
+
+public class Mercado {
+   
+    private List<Cliente> clientes = new LinkedList<>();
+    
+    public void addClientes(Cliente cliente) {
+        clientes.add(cliente);
+    }
+    
+    public List<Cliente> buscarClienteNome(String nome) {
+        List<Cliente> encontrados = new LinkedList<Cliente>();
+        for (Cliente cliente : clientes) {
+            if (cliente.getNome().equals(nome))
+                encontrados.add(cliente);  
+        }
+        return encontrados;
+    }
+    
+    public Cliente buscarClienteCpf(String cpf) {
+        for (Cliente cliente : clientes) {
+            if (cliente.getCpf().equals(cpf)) {
+                return cliente;  
+            }
+        }
+        return null;
+    }
+    
+    public List<Cliente> verificarCartao(boolean possuiCartao) {
+        List<Cliente> encontrados = new LinkedList<Cliente>();
+        for (Cliente cliente : clientes) {
+            if (cliente.isCartao() == possuiCartao) {
+                encontrados.add(cliente);  
+            }
+        }
+        return encontrados;
+    }
+    
+    public List<Cliente> getClientes() {
+        return clientes;
+    }
+}
+```
 <img width="493" height="968" alt="image" src="https://github.com/user-attachments/assets/4e90a364-a034-4d3b-9bec-8a62001575ab" />
 
 ---
