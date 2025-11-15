@@ -80,7 +80,25 @@ Na prática: Não faz sentido construir seu próprio sistema de pagamentos quand
 ---
 
 ## ATIVIDADE 6
-<img width="805" height="883" alt="image" src="https://github.com/user-attachments/assets/f90a38ab-1b3a-4006-9e1d-3a6ada07b2f8" />
+```java
+import org.junit.jupiter.api.Test;
+import java.util.List;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class Teste {
+    @Test
+    void test() {
+        Mercado mercadinho = new Mercado();
+        mercadinho.addClientes(new Cliente("Maria", "12345678910", true));
+        assertEquals(1, mercadinho.getClientes().size());
+        List<Cliente> clientesComCartao = mercadinho.verificarCartao(true);
+        
+        System.out.println("Clientes com cartão: " + clientesComCartao.size());
+        List<Cliente> busca = mercadinho.buscarClienteNome("Maria");
+        assertEquals("12345678910", busca.get(0).getCpf());
+    }
+}
+```
 
 ## ATIVIDADE 7
   [Integração com SQLite](./engenhariadesoftware/Atividade7)
