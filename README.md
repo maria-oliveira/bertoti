@@ -12,8 +12,6 @@ Essa característica intangível e imprevisível torna o desenvolvimento de soft
 ---
 
 ## ATIVIDADE 2
- Comentar com suas palavras o segundo trecho do livro Software Engineering at Google, Oreilly.(vou postar abaixo)
-
 "Programming Over Time
 We propose that “software engineering” encompasses not just the act of writing code, but all of the tools and processes an organization uses to build and maintain that code over time. What practices can a software organization introduce that will best keep its code valuable over the long term? How can engineers make a codebase more sustainable and the software engineering discipline itself more rigorous? We don’t have fundamental answers to these questions, but we hope that Google’s collective experience over the past two decades illuminates possible paths toward finding those answers. One key insight we share in this book is that software engineering can be thought of as “programming integrated over time.” What practices can we introduce to our code to make it sustainable—able to react to necessary change—over its life cycle, from conception to introduction to maintenance to deprecation?
 The book emphasizes three fundamental principles that we feel software organizations should keep in mind when designing, architecting, and writing their code:
@@ -31,10 +29,9 @@ Eles trazem uma frase que resume tudo: engenharia de software é **"programaçã
 A questão central é sobre sustentabilidade, como fazer um código que consiga reagir às mudanças inevitáveis durante todo seu ciclo de vida, desde quando é só uma ideia até quando precisa ser descontinuado.
 
 Pra organizar esse pensamento, o livro se estrutura em torno de três princípios fundamentais:
-1. **Tempo e Mudança** - Como o código vai precisar se adaptar durante sua vida útil
-2. **Escala e Crescimento** - Como a organização vai precisar evoluir conforme cresce
-3. **Trade-offs e Custos** - Como tomar decisões levando em conta os dois primeiros pontos
-
+1. **Tempo e Mudança** -O software precisa evoluir constantemente, novas funcionalidades, tecnologias obsoletas e bugs emergem ao longo do tempo. A engenharia de software deve garantir que o código seja facilmente modificável no futuro, não apenas funcional hoje.
+2. **Escala e Crescimento** - Conforme a organização cresce, o volume de código e desenvolvedores aumenta. O que funciona com poucos pode se tornar inviável com muitos. É preciso criar estruturas que permitam escalar sem perder qualidade.
+3. **Trade-offs e Custos** - Toda decisão envolve compromissos: velocidade versus qualidade, flexibilidade versus complexidade. A engenharia madura avalia conscientemente esses trade-offs considerando longevidade, equipe e custos reais, buscando o sustentável, não apenas o possível.
 ---
 
 ## ATIVIDADE 3
