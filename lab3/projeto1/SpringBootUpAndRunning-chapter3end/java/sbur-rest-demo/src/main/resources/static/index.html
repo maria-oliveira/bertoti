@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Coffees</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1><i></i>Coffees</h1>
+        <button onclick="abrirModal()">+ Add</button>
+    </header>
+
+    <div class="grid" id="lista-cafes"></div>
+</div>
+
+<div class="modal" id="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>Novo Café</h3>
+            <span onclick="fecharModal()">✕</span>
+        </div>
+        <div class="modal-body">
+            <input type="text" id="nomeCafe" placeholder="Nome do café">
+            <input type="text" id="inputID" disabled placeholder="ID automático">
+        </div>
+        <div class="modal-footer">
+            <button onclick="fecharModal()">Cancelar</button>
+            <button id="salvarBtn">Salvar</button>
+        </div>
+    </div>
+</div>
+
+<template id="card-template">
+    <div class="card">
+        <div>
+            <h4 class="nome"></h4>
+            <small class="id"></small>
+        </div>
+        <button class="delete">🗑️</button>
+    </div>
+</template>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
